@@ -1,0 +1,13 @@
+<%- include('partials/header.ejs') %>
+
+    <form action="/decrement" id="decrement-form" method="post">
+      <button class="increment-btn" type="submit">-1</button>
+    </form>
+    <div class="date-section">
+      <h3 class="date-header">Last Applied: </h3>
+      <p class="date"><%= lastApplied %></p>
+    </div>
+    <a href="/" class="redirect-link">Increment</a>
+    <script src="/js/decrement.js" async defer></script>
+
+<%- include('partials/footer.ejs') %>
